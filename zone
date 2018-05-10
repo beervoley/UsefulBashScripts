@@ -1,6 +1,6 @@
 #!/bin/bash
    if ! [ -z "$1" ]; then
-           url="http://api.worldweatheronline.com/premium/v1/tz.ashx?key=ac0a56a106364e74a91225255180805&q="
+           url="http://api.worldweatheronline.com/premium/v1/tz.ashx?key=&q="
 	   format="&format=json"
 	   counter=0
 	   city=""
