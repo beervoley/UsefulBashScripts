@@ -1,0 +1,6 @@
+#!/bin/bash
+if ! [ -z "$1" ] && ! [ -z "$2" ]; then	
+	url="http://free.currencyconverterapi.com/api/v5/convert?q="$1"_"$2"&compact=y"
+	value="$(curl -s -m 15 $url)"
+	echo ${value:18:5}	
+fi

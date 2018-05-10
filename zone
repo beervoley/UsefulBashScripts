@@ -1,0 +1,23 @@
+#!/bin/bash
+   if ! [ -z "$1" ]; then
+           url="http://api.worldweatheronline.com/premium/v1/tz.ashx?key=ac0a56a106364e74a91225255180805&q="
+	   format="&format=json"
+	   counter=0
+	   city=""
+	   offset=85
+	   for str in "$@"
+	   do
+           if ! [ $counter -eq 0 ]; then
+		url=$url"+"
+		offset=$((offset+1))
+		city=$city" "
+	   fi
+	   url=$url$str
+	   counter=$((counter+1))
+           offset=$((offset+${#str}))
+	   city=$city$str
+	   done
+	   url=$url$format
+           value="$(curl -s -m 15 $url)"
+           echo "Time in" $city "is" ${value:$offset:6}      
+  fi
