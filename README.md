@@ -1,4 +1,4 @@
-##i UsefulBashScripts
+## UsefulBashScripts
 Here you can find some useful bash script I've created for my convinience
 
 1. Exchange script will allow you to get real time (30 minutes delay) currency exchange rate.
