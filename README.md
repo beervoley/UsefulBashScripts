@@ -1,7 +1,7 @@
 ## UsefulBashScripts
 Here you can find some useful bash script I've created for my convinience
 
-1. Exchange script will allow you to get real time (30 minutes delay) currency exchange rate.
+1. Exchange script will allow you to get real time (info gets updated every 30 minutes) currency exchange rate.
 
 	Usage: **exchange currency1 currency2**
 
